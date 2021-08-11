@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
+
+body {
+
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.calculator__setup {
+    margin: 40px;
+    width: 370px;
+}
+
+.bill {
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: hsl(189, 41%, 97%);
+    width: 340px;
+    padding: 0px 5px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.bill::placeholder {
+    text-align: end;
+}
+
+.tips__valor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tips__valor button {
+    background-color: hsl(183, 100%, 15%);
+    margin: 5px;
+    width: 110px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.tips__valor .tips__five {
+    margin-left: 0;
+}
+
+.tips__valor .tips__twentyfive {
+    margin-left: 0;
+}
+
+.tips__valor .tips__custom {
+    color: hsl(184, 14%, 56%);
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+
+}
+
+.number {
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: hsl(189, 41%, 97%);
+    width: 340px;
+    padding: 0px 5px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+.number::placeholder {
+    text-align: end;
+}
+
+
+.calculator_result {
+    background-color: hsl(183, 100%, 15%);
+    margin: 20px;
+    width: 370px;
+    height: 332px;
+    border-radius: 10px;
+}
+.result__tip, .total{
+    display: flex;
+    align-items: center;
+}
+
+.tip__Text{
+    color: hsl(0, 0%, 100%);
+    margin: 40px 30px 20px; 
+}
+.total__text{
+    color: hsl(0, 0%, 100%);
+    margin: 0px 30px; 
+}
+.tip__amount, .total__name{
+    font-size: .7em;
+}
+.tip__person, .total__person{
+    font-size: 0.5em;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.total__tip, .total__pagar{
+    color: hsl(172, 67%, 45%);
+    font-size: 1.5em;
+}
+.total__tip{
+    margin-left: 60px;
+}
+.total__pagar{
+    margin-left: 103px;
+}
+
+.reset{
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin-top: 100px;
+    width: 80%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color:  hsl(182, 87%, 24%);
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
