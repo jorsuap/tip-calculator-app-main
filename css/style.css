@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Space Mono', monospace;
     font-size: 24px;
+    box-sizing: border-box;
 }
 
 body {
-
     background-color: hsl(185, 41%, 84%);
     height: 100vh;
     width: 100%;
@@ -18,51 +18,114 @@ body {
     flex-direction: column;
 }
 
+.tittle {
+    margin-bottom: 50px;
+    color: hsl(186, 14%, 43%);
+    font-size: 1em;
+    letter-spacing: 6px;
+}
+
 .calculator {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .calculator__setup {
-    margin: 40px;
+    margin: 40px 0px 40px 40px;
     width: 370px;
+}
+
+.bill_name {
+    color: hsl(186, 14%, 43%);
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 5px;
+    
 }
 
 .bill {
     background-image: url(../images/icon-dollar.svg);
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 20px center;
     background-color: hsl(189, 41%, 97%);
-    width: 340px;
-    padding: 0px 5px;
+    width: 350px;
+    height: 50px;
     border: none;
     border-radius: 7px;
     outline: none;
     margin-bottom: 30px;
+    text-align: end;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    box-sizing: border-box;
+}
+
+.bill:focus {
+    border: solid 2px hsl(172, 67%, 45%);
 }
 
 .bill::placeholder {
     text-align: end;
+    color: hsl(184, 14%, 56%);
+    box-sizing: border-box;
+}
+
+.tips__name {
+    color: hsl(186, 14%, 43%);
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .tips__valor {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .tips__valor button {
     background-color: hsl(183, 100%, 15%);
-    margin: 5px;
+    margin: 7px;
     width: 110px;
+    padding: 5px;
     text-align: center;
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.tips__valor button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+.tips__custom {
+    width: 110px;
+    height: 45px;
+    border: none;
+    margin: 8px;
+    padding: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    text-align: end;
+    box-sizing: border-box;
+}
+.tips__custom:focus{
+    border: solid 2px hsl(172, 67%, 45%);
+}
+.tips__custom::placeholder {
+    text-align: center;
 }
 
 .tips__valor .tips__five {
@@ -80,78 +143,110 @@ body {
 
 }
 
+.people__number {
+    color: hsl(186, 14%, 43%);
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
 .number {
     background-image: url(../images/icon-person.svg);
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 20px center;
     background-color: hsl(189, 41%, 97%);
-    width: 340px;
-    padding: 0px 5px;
+    width: 350px;
+    height: 50px;
     border: none;
     border-radius: 7px;
     outline: none;
+    text-align: end;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    box-sizing: border-box;
+}
+
+.number:focus {
+    border: solid 2px hsl(172, 67%, 45%);
 }
 
 .number::placeholder {
     text-align: end;
+    color: hsl(184, 14%, 56%);
 }
 
 
 .calculator_result {
     background-color: hsl(183, 100%, 15%);
-    margin: 20px;
-    width: 370px;
-    height: 332px;
-    border-radius: 10px;
+    margin: 20px 30px 20px 20px;
+    width: 350px;
+    height: 360px;
+    border-radius: 15px;
 }
-.result__tip, .total{
+
+.result__tip,
+.total {
     display: flex;
     align-items: center;
 }
 
-.tip__Text{
-    color: hsl(0, 0%, 100%);
-    margin: 40px 30px 20px; 
+.tip__Text {
+    color: hsl(189, 41%, 97%);
+    margin: 40px 30px 30px;
 }
-.total__text{
-    color: hsl(0, 0%, 100%);
-    margin: 0px 30px; 
+
+.total__text {
+    color: hsl(189, 41%, 97%);
+    margin: 0px 30px;
 }
-.tip__amount, .total__name{
-    font-size: .7em;
+
+.tip__amount,
+.total__name {
+    font-size: .6em;
 }
-.tip__person, .total__person{
+
+.tip__person,
+.total__person {
     font-size: 0.5em;
     color: hsl(186, 14%, 43%);
     font-weight: 700;
 }
-.total__tip, .total__pagar{
+
+.total__tip,
+.total__pagar {
     color: hsl(172, 67%, 45%);
     font-size: 1.5em;
 }
-.total__tip{
+
+.total__tip {
     margin-left: 60px;
 }
-.total__pagar{
-    margin-left: 103px;
+
+.total__pagar {
+    margin-left: 90px;
 }
 
-.reset{
+.reset {
     border: none;
     text-align: center;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 120px;
     width: 80%;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color:  hsl(182, 87%, 24%);
+    background-color: hsl(182, 87%, 24%);
     cursor: pointer;
     color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: .8em;
 }
-.boton{
+
+.boton {
     display: flex;
     justify-content: center;
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -161,4 +256,68 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
     font-size: 11px;
+}
+
+
+@media only screen and (max-width: 850px){
+    body {
+        height: 100%;
+    }
+    .tittle{
+        margin-top: 40px;
+    }
+    .calculator {
+        flex-direction: column;
+        border-radius: 25px 25px 0 0;
+    }
+    .tips__valor button{
+        width: 140px;  
+        margin: 10px;   
+    }
+   
+    .tips__valor .tips__fiveteen {
+        margin-left: 0px;
+    }
+    .tips__valor .tips__twentyfive {
+        margin-left: 10px;
+    }
+    .tips__valor .tips__fivety {
+        margin-left: 0px;
+    }
+    .tips__custom{
+        margin-left: 10px;
+        width: 140px;
+    }
+   
+    .bill, .number {
+        width: 300px;
+    }
+    .calculator__setup {
+        margin: 30px 25px;
+        margin-left:35px; 
+        width: 310px;
+    }
+    .calculator_result {
+        margin: 0px 20px;
+        width: 320px;
+        height: 270px;
+        margin-bottom: 50px;
+    }
+    .tips__custom {
+        margin: 10px;
+    }
+
+    .total__tip {
+        margin-left: 40px;
+    }
+    
+    .total__pagar {
+        margin-left: 70px;
+    }
+    .reset {
+        margin-top: 40px;
+    }
+    .attribution {
+        display: none;
+    }
 }
