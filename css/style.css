@@ -342,4 +342,7 @@ body {
     .attribution {
         display: none;
     }
+    .msnerror{
+        margin-left: 40px;
+    }
 }
