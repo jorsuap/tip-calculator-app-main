@@ -1,41 +1,28 @@
-function disable(){
+function disable() {
 
     var reset = document.getElementById("reset");
     var bill = parseFloat(document.getElementById("bill").value);
-
-    if (isNaN(bill)){
-        reset.classList.add("disable");
-        document.getElementById("reset").disabled= true;
-    }
-    else{
-        reset.classList.remove("disable");
-        document.getElementById("reset").disabled= false;
-    }
-}
-function disable1(){
-
-    var reset = document.getElementById("reset");
     var people = parseFloat(document.getElementById("number").value);
 
-    if (isNaN(people)) {
-        reset.classList.add("disable");
-        document.getElementById("reset").disabled= true;
-    }
-    else{
+    if (isNaN(bill) && isNaN(people)) {
+        document.getElementById("total__tip").innerHTML = "$" + bill;
         reset.classList.remove("disable");
-        document.getElementById("reset").disabled= false;
+        document.getElementById("reset").disabled = true;
+    } else {
+        document.getElementById("total__tip").innerHTML = "$0.00";
+        reset.classList.add("disable");
+        document.getElementById("reset").disabled = false;
     }
 }
 
-function zero(){
+function zero() {
     var numpeople = parseFloat(document.getElementById("number").value);
     var borderalert = document.getElementById("number");
     var msnealert = document.getElementsByClassName("msnerror")[0];
-    if(numpeople <= 0){
+    if (numpeople <= 0) {
         borderalert.classList.add("errorborder");
         msnealert.classList.add("activemsnerror")
-    }
-    else{
+    } else {
         borderalert.classList.remove("errorborder");
         msnealert.classList.remove("activemsnerror")
     }

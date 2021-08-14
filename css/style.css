@@ -63,6 +63,7 @@ body {
     font-weight: 700;
     color: hsl(183, 100%, 15%);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .bill:focus {
@@ -120,6 +121,8 @@ body {
     outline: none;
     text-align: end;
     box-sizing: border-box;
+    cursor: pointer;
+    
 }
 .tips__custom:focus{
     border: solid 2px hsl(172, 67%, 45%);
@@ -137,7 +140,7 @@ body {
 }
 
 .tips__valor .tips__custom {
-    color: hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
     background-color: hsl(189, 41%, 97%);
     font-weight: 700;
 
@@ -167,6 +170,7 @@ body {
     font-weight: 700;
     color: hsl(183, 100%, 15%);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .number:focus {
@@ -249,7 +253,7 @@ body {
     width: 80%;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(183, 83%, 23%);;
     cursor: pointer;
     color: hsl(183, 100%, 15%);
     font-weight: 700;
@@ -260,7 +264,7 @@ body {
     background-color: hsl(185, 41%, 84%);
 }
 .disable{
-    background-color: hsl(183, 83%, 23%);
+    background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
 
