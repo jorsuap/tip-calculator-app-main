@@ -34,7 +34,7 @@ body {
 }
 
 .calculator__setup {
-    margin: 40px 0px 40px 40px;
+    margin: 30px 0px 30px 40px;
     width: 370px;
 }
 
@@ -142,7 +142,9 @@ body {
     font-weight: 700;
 
 }
-
+/* .people{
+    display: inline;
+} */
 .people__number {
     color: hsl(186, 14%, 43%);
     font-size: .6em;
@@ -175,11 +177,23 @@ body {
     text-align: end;
     color: hsl(184, 14%, 56%);
 }
+.msnerror{
+    visibility: hidden;
+    margin-left: 90px;
+    font-size: 1em;
+    color: hsl(12, 77%, 58%);
+}
+.activemsnerror{
+   visibility: visible;
+}
+.errorborder{
+    border: solid 2px hsl(12, 77%, 58%);
+}
 
 
 .calculator_result {
     background-color: hsl(183, 100%, 15%);
-    margin: 20px 30px 20px 20px;
+    margin: 10px 30px 10px 20px;
     width: 350px;
     height: 360px;
     border-radius: 15px;
@@ -231,15 +245,23 @@ body {
     border: none;
     text-align: center;
     padding: 5px;
-    margin-top: 120px;
+    margin-top: 125px;
     width: 80%;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color: hsl(182, 87%, 24%);
+    background-color: hsl(172, 67%, 45%);
     cursor: pointer;
     color: hsl(183, 100%, 15%);
     font-weight: 700;
     font-size: .8em;
+
+}
+.reset:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+.disable{
+    background-color: hsl(183, 83%, 23%);
+    color: hsl(183, 100%, 15%);
 }
 
 .boton {
