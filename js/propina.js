@@ -8,9 +8,9 @@ var porcent1;
 
 keynumber.forEach(function (key) {
     key.addEventListener('click', function(){
-        identificador = this.id;
+        identificador = document.getElementById(this.id);
         identificador.classList.add("botonactive");
-        // alert(identificador);
+        alert(identificador);
         porcent1 = parseFloat(key.innerText);
     })
 });
@@ -22,6 +22,7 @@ function porcentaje(porcent1){
     var borderalert = document.getElementById("number");
     var msnealert = document.getElementsByClassName("msnerror")[0];
     var reset = document.getElementById("reset");
+    alert(reset);
 
     if(isNaN(bill) || isNaN(people)) {
         document.getElementById("total__tip").innerHTML = "$0.00";
@@ -33,12 +34,12 @@ function porcentaje(porcent1){
 
         if (people <= 0) {
             borderalert.classList.add("errorborder");
-            msnealert.classList.add("activemsnerror")
+            msnealert.classList.add("activemsnerror");
             event.defaultPrevented;
             
         } else {
             borderalert.classList.remove("errorborder");
-            msnealert.classList.remove("activemsnerror")
+            msnealert.classList.remove("activemsnerror");
     
             tip = (bill * porcent1) / 100;
             totalbill = bill + tip;
