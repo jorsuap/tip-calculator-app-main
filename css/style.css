@@ -193,6 +193,10 @@ body {
 .errorborder:focus{
     border: solid 2px hsl(12, 77%, 58%);
 }
+.botonactive{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
 
 
 .calculator_result {
@@ -238,11 +242,13 @@ body {
 }
 
 .total__tip {
-    margin-left: 60px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    
 }
 
 .total__pagar {
-    margin-left: 90px;
+    margin-left: 80px;
 }
 
 .reset {
@@ -334,11 +340,11 @@ body {
     }
 
     .total__tip {
-        margin-left: 40px;
+        margin-left: 30px;
     }
     
     .total__pagar {
-        margin-left: 70px;
+        margin-left: 60px;
     }
     .reset {
         margin-top: 40px;
