@@ -4,12 +4,13 @@ function disable() {
     var bill = parseFloat(document.getElementById("bill").value);
     var people = parseFloat(document.getElementById("number").value);
 
-    if (isNaN(bill) && isNaN(people)) {
-        document.getElementById("total__tip").innerHTML = "$" + bill;
+    if (isNaN(bill) || isNaN(people)) {
+        
+        document.getElementById("total__tip").innerHTML = "$0.00";
         reset.classList.remove("disable");
         document.getElementById("reset").disabled = true;
     } else {
-        document.getElementById("total__tip").innerHTML = "$0.00";
+        // document.getElementById("total__tip").innerHTML = "$" + bill;
         reset.classList.add("disable");
         document.getElementById("reset").disabled = false;
     }

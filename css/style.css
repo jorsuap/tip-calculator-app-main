@@ -190,7 +190,7 @@ body {
 .activemsnerror{
    visibility: visible;
 }
-.errorborder{
+.errorborder:focus{
     border: solid 2px hsl(12, 77%, 58%);
 }
 

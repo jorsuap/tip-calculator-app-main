@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="js/propina.js"></script>
   <script src="js/disable.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
@@ -27,16 +26,16 @@
         <p class="tips__name"> Select Tip %</p>
       </div>
       <div class="tips__valor">
-        <button class="tips__five">5%</button>
-        <button class="tips__ten">10%</button>
-        <button class="tips__fiveteen">15%</button>
-        <button class="tips__twentyfive">25%</button>
-        <button class="tips__fivety">50%</button>
+        <button class="tips__five" name="data-porcent">5%</button>
+        <button class="tips__ten" name="data-porcent">10%</button>
+        <button class="tips__fiveteen" name="data-porcent">15%</button>
+        <button class="tips__twentyfive" name="data-porcent">25%</button>
+        <button class="tips__fivety" name="data-porcent">50%</button>
         <input type="text" class="tips__custom" placeholder="Custom"></input>
       </div>
       <div class="people">
         <p class="people__number">Number of People<span class="msnerror">Can't be zero</span></p>
-        <input id="number" type="text" class="number" placeholder="0" onchange="disable()" onkeydown="zero()">
+        <input id="number" type="text" class="number" placeholder="0" onchange="disable()" onkeyup="porcentaje(porcent1)">
       </div>
     </div>
 
@@ -53,10 +52,10 @@
           <p class="total__name">Total</p>
           <p class="total__person">/ person</p>
         </div>
-        <h1 class="total__pagar">$0.00</h1>
+        <h1  id="total__pagar"  class="total__pagar">$0.00</h1>
       </div>
       <div class="boton">
-      <button class="reset" id="reset" onclick="propina()">Reset</button></div>
+      <button class="reset" id="reset">Reset</button></div>
     </div>
   </div>
 
@@ -65,5 +64,6 @@
     Coded by <a href="#">Jorddi Suarez</a>.
   </div>
 </body>
+<script src="js/propina.js"></script>
 
 </html>
