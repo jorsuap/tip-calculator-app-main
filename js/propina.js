@@ -1,3 +1,4 @@
+// Declaracion de variable globales
 const keynumber = document.getElementsByName("data-porcent");
 
 var tip;
@@ -7,18 +8,18 @@ var totalbillbyperson;
 var porcent1 = 0;
 var identificadorid;
 
-
+// funcion para detectar cual tecla es pulsada y obtener su texto y si id...
 keynumber.forEach(function (key) {
     key.addEventListener('click', function () {
-        identificador = document.getElementById(this.id);
+        identificador = document.getElementById(this.id); // con el metodo "this.id" asignamos el id del elemento HTML
         identificadorid = identificador;
         identificador.classList.toggle("botonactive");
-        porcent1 = parseFloat(key.innerText);
+        porcent1 = parseFloat(key.innerText); //aqui asignamos el texto del boton pulsado con el metodo innet
         borrarclass(identificadorid);
     })
 });
 
-
+// funcion para quitar una clase cuando se haga click en un boton
 function borrarclass(identificadorid) {
     keynumber.forEach(function (key) {
         key.addEventListener('click', function () {
@@ -30,6 +31,7 @@ function borrarclass(identificadorid) {
 
 function porcentaje(porcent1) {
 
+    //declaracion de variables locales
     var bill = parseFloat(document.getElementById("bill").value);
     var people = parseInt(document.getElementById("number").value);
     var borderalert = document.getElementById("number");
@@ -37,7 +39,7 @@ function porcentaje(porcent1) {
     var reset = document.getElementById("reset");
     var custum = parseFloat(document.getElementById("custom").value);
 
-
+    //validacion de NaN
     if (isNaN(bill) || isNaN(people)) {
         event.defaultPrevented;
     } else {
@@ -86,7 +88,7 @@ function porcentaje(porcent1) {
     }
 };
 
-
+//funcion de reset
 function reset() {
 
     document.getElementById("bill").value = '';
