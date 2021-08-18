@@ -358,6 +358,7 @@ body {
     }
 }
 
+/*Reglas para deshabilitar las fechas internas de aumento y decremento del inpunt type"number"*/
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none;
