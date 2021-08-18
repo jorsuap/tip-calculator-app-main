@@ -20,22 +20,22 @@
     <div class="calculator__setup">
       <div class="calculator__bill">
         <p class="bill_name">Bill</p>
-        <input id="bill" type="text" class="bill" placeholder="0" onchange="disable()">
+        <input id="bill" type="text" class="bill" placeholder="0">
       </div>
-      <div class="tips">
+      <div class="">
         <p class="tips__name"> Select Tip %</p>
       </div>
       <div class="tips__valor">
-        <button id="five" class="tips__five" name="data-porcent">5%</button>
-        <button id="ten" class="tips__ten" name="data-porcent">10%</button>
-        <button id="fiveteen" class="tips__fiveteen" name="data-porcent">15%</button>
-        <button id="twentyfive" class="tips__twentyfive" name="data-porcent">25%</button>
-        <button id="fivety" class="tips__fivety" name="data-porcent">50%</button>
-        <input type="text" class="tips__custom" placeholder="Custom"></input>
+        <button id="five" class="tips__five tips" name="data-porcent">5%</button>
+        <button id="ten" class="tips__ten tips" name="data-porcent">10%</button>
+        <button id="fiveteen" class="tips__fiveteen tips" name="data-porcent">15%</button>
+        <button id="twentyfive" class="tips__twentyfive tips" name="data-porcent">25%</button>
+        <button id="fivety" class="tips__fivety tips" name="data-porcent">50%</button>
+        <input type="text" class="tips__custom tips" placeholder="Custom"></input>
       </div>
       <div class="people">
         <p class="people__number">Number of People<span class="msnerror">Can't be zero</span></p>
-        <input id="number" type="text" class="number" placeholder="0" onchange="disable()" onkeyup="porcentaje(porcent1)">
+        <input id="number" type="text" class="number" placeholder="0" onkeyup="porcentaje(porcent1)">
       </div>
     </div>
 
