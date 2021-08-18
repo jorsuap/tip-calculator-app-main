@@ -31,7 +31,7 @@ function borrarclass(identificadorid) {
 function porcentaje(porcent1) {
 
     var bill = parseFloat(document.getElementById("bill").value);
-    var people = parseFloat(document.getElementById("number").value);
+    var people = parseInt(document.getElementById("number").value);
     var borderalert = document.getElementById("number");
     var msnealert = document.getElementsByClassName("msnerror")[0];
     var reset = document.getElementById("reset");
